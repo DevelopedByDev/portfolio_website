@@ -8,7 +8,7 @@ export default function Projects() {
         <div>
           <div className="flex justify-between items-baseline mb-2">
             <h4 className="font-bold text-lg">ColorGuesserPro <a href="/projects/colorguesspro-privacy" className="text-sm font-normal underline ml-2">privacy policy</a></h4>
-            <span className="time-span">2024</span>
+            <span className="time-span">2025</span>
           </div>
           <p>a simple app to put your color theory skills to the test; made to get experience using swiftui</p>
         </div>
