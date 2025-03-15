@@ -3,7 +3,18 @@ export default function Projects() {
     <section id="projects">
       <h2>projects</h2>
       
-      <h3>social</h3>
+      <h3>technical</h3>
+      <div className="space-y-6">
+        <div>
+          <div className="flex justify-between items-baseline mb-2">
+            <h4 className="font-bold text-lg">ColorGuesserPro <a href="/projects/colorguesspro-privacy" className="text-sm font-normal underline ml-2">privacy policy</a></h4>
+            <span className="time-span">2024</span>
+          </div>
+          <p>a simple app to put your color theory skills to the test; made to get experience using swiftui</p>
+        </div>
+      </div>
+
+      <h3 className="mt-8">social</h3>
       <div className="space-y-6">
         <div>
           <div className="flex justify-between items-baseline mb-2">
