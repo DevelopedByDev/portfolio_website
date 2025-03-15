@@ -14,6 +14,14 @@ export default function Projects() {
         </div>
       </div>
 
+      <div>
+          <div className="flex justify-between items-baseline mb-2">
+            <h4 className="font-bold text-lg">resident advisor, johns hopkins university</h4>
+            <span className="time-span">2023 – Present</span>
+          </div>
+          <p>supporting <strong>first-year students</strong> through leadership, community-building, and crisis management</p>
+        </div>
+
       <h3 className="mt-8">social</h3>
       <div className="space-y-6">
         <div>
@@ -22,14 +30,6 @@ export default function Projects() {
             <span className="time-span">2021</span>
           </div>
           <p>cofounded an initiative that raised <strong>USD 53,000</strong> to provide <strong>oxygen concentrators</strong> to hospitals during the covid-19 crisis. Recognized by <strong>healthcare leaders and government officials</strong></p>
-        </div>
-
-        <div>
-          <div className="flex justify-between items-baseline mb-2">
-            <h4 className="font-bold text-lg">resident advisor, johns hopkins university</h4>
-            <span className="time-span">2023 – Present</span>
-          </div>
-          <p>supporting <strong>first-year students</strong> through leadership, community-building, and crisis management</p>
         </div>
 
         <div>
