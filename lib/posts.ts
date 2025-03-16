@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
-export async function getAllPosts() {
+export function getAllPosts() {
   // If directory doesn't exist, return empty array
   if (!fs.existsSync(postsDirectory)) {
     return []
@@ -32,7 +32,7 @@ export async function getAllPosts() {
   return posts
 }
 
-export async function getPostBySlug(slug: string) {
+export function getPostBySlug(slug: string) {
   const fullPath = path.join(postsDirectory, `${slug}.mdx`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)

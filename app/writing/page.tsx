@@ -1,7 +1,7 @@
 import { getAllPosts } from '@/lib/posts'
 
-export default async function Writing() {
-  const posts = await getAllPosts()
+export default function Writing() {
+  const posts = getAllPosts()
 
   return (
     <section id="writing">
