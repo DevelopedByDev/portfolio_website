@@ -14,16 +14,18 @@ export default function Projects() {
         </div>
       </div>
 
-      <div>
+      <h3 className="mt-8">social</h3>
+
+      <div className="space-y-6">
+
+        <div>
           <div className="flex justify-between items-baseline mb-2">
             <h4 className="font-bold text-lg">resident advisor, johns hopkins university</h4>
             <span className="time-span">2023 – Present</span>
           </div>
           <p>supporting <strong>first-year students</strong> through leadership, community-building, and crisis management</p>
         </div>
-
-      <h3 className="mt-8">social</h3>
-      <div className="space-y-6">
+        
         <div>
           <div className="flex justify-between items-baseline mb-2">
             <h4 className="font-bold text-lg">students for unified relief</h4>
