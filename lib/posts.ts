@@ -15,9 +15,9 @@ export function getAllPosts() {
   const files = fs.readdirSync(postsDirectory)
   
   const posts = files
-    .filter((fileName) => fileName.endsWith('.mdx'))
+    .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => {
-      const slug = fileName.replace(/\.mdx$/, '')
+      const slug = fileName.replace(/\.md$/, '')
       const fullPath = path.join(postsDirectory, fileName)
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data } = matter(fileContents)
@@ -34,15 +34,15 @@ export function getAllPosts() {
   return posts
 }
 
-export async function getPostBySlug(slug: string) {
-  const fullPath = path.join(postsDirectory, `${slug}.mdx`)
+export function getPostBySlug(slug: string) {
+  const fullPath = path.join(postsDirectory, `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
   
   // Convert markdown to HTML string
-  const processedContent = await remark()
+  const processedContent = remark()
     .use(html)
-    .process(content)
+    .processSync(content)
   const contentHtml = processedContent.toString()
 
   return {
