@@ -3,7 +3,7 @@ export default function Home() {
     <section id="home">
       <h1>divyansh (dev) lalwani</h1>
       <p className="text-lg">
-        biomedical engineering, applied math, computer science (triple major) @ johns hopkins. enchanted by ai, especially in productivity and healthcare. currently building software to help genz reclaim their focus in a distracted world.
+        biomedical engineering and applied math @ johns hopkins. enchanted by ai, especially in productivity and healthcare. currently building software to help genz reclaim their focus in a distracted world.
       </p>
 
       <p className="text-lg">

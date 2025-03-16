@@ -7,7 +7,7 @@ export default async function Writing() {
     <section id="writing">
       <h2>writing</h2>
       <p>
-        i'm divyansh lalwani, but you can call me dev. i study biomedical engineering and computer science at the johns hopkins university. i'm on a journey to make the best developer i can be. currently learning web development and diving deep into deep learning. my aim is to inspire people who inspire me. here's my writing. do indulge. take away something. act on it. tell me about it. make both our days.
+        i'm divyansh lalwani, but you can call me dev. i study biomedical engineering and applied math at the johns hopkins university. i'm on a journey to make the best developer i can be. currently learning web development and diving deep into deep learning. my aim is to inspire people who inspire me. here's my writing. do indulge. take away something. act on it. tell me about it. make both our days.
       </p>
       <p>for shorter writing, check out my <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer">x</a></p>
 
