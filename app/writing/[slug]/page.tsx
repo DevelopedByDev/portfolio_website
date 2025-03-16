@@ -1,5 +1,5 @@
 import { getAllPosts, getPostBySlug } from '@/lib/posts'
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import { MDXProvider } from '@mdx-js/react'
 
 export function generateStaticParams() {
   const posts = getAllPosts()
@@ -8,8 +8,10 @@ export function generateStaticParams() {
   }))
 }
 
-export default function Post({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug)
+export const dynamicParams = false
+
+export default async function Post({ params }: { params: { slug: string } }) {
+  const post = await getPostBySlug(params.slug)
   
   return (
     <article className="prose max-w-none">
@@ -18,7 +20,9 @@ export default function Post({ params }: { params: { slug: string } }) {
         {new Date(post.date).toLocaleDateString()}
       </time>
       <div className="mt-8">
-        <MDXRemote source={post.content} />
+        <MDXProvider>
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        </MDXProvider>
       </div>
     </article>
   )
