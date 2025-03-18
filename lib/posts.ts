@@ -29,7 +29,12 @@ export function getAllPosts() {
         excerpt: data.excerpt,
       }
     })
-    .sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1))
+    // Sort posts by date in descending order (newest first)
+    .sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB.getTime() - dateA.getTime();
+    })
 
   return posts
 }

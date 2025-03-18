@@ -15,6 +15,7 @@ paragraphs work
 
 [links work](https://www.google.com)
 
+images work:
 ![images work](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
 > blockquotes work
