@@ -16,7 +16,7 @@ export default function Writing() {
         {posts.map((post) => (
           <article key={post.slug} className="border-b pb-4">
             <h4 className="text-xl font-semibold">
-              <a href={`/writing/${post.slug}`}>{post.title}</a>
+              <a href={`/writing/${encodeURIComponent(post.slug)}`}>{post.title}</a>
             </h4>
             <time dateTime={post.date} className="text-sm text-gray-600">
               {new Date(post.date).toLocaleDateString()}
