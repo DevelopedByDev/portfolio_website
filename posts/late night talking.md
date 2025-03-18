@@ -18,6 +18,8 @@ the day treated me well; it kept me comfortable, i thought. but in all honesty, 
 
 sitting on a desk i'm not completely supposed to be sitting at, writing this at 5:14 am in the morning with 240 mg of caffeine in my veins, i'm convinced. i'm going back to the night. i've kept it waiting long enough.  
 
-it might kill me faster, much faster. but i'd rather die with the night by my side than in broad daylight.  
+it might kill me faster. much faster. 
+
+but maybe that's ok.
 
 good night.
