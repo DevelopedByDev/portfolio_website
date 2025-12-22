@@ -48,11 +48,11 @@ export function Sidebar() {
       {/* Mobile menu button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 lg:hidden p-1.5 rounded hover:bg-[rgb(var(--foreground)/0.04)] transition-colors"
+        className="fixed top-5 right-5 z-50 lg:hidden p-2 rounded hover:bg-[rgb(var(--foreground)/0.04)] transition-colors"
         aria-label="Toggle menu"
       >
         <svg
-          className="w-4 h-4 opacity-50"
+          className="w-5 h-5 opacity-50"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -78,12 +78,12 @@ export function Sidebar() {
         className={`
           fixed top-0 left-0 h-screen z-40
           flex flex-col justify-between
-          py-8 px-5
+          py-10 px-6
           sidebar-bg
           border-r border-[rgb(var(--foreground)/0.04)]
           transition-transform duration-300 ease-out
-          lg:translate-x-0 lg:w-44
-          ${isOpen ? 'translate-x-0 w-48' : '-translate-x-full w-48'}
+          lg:translate-x-0 lg:w-52
+          ${isOpen ? 'translate-x-0 w-56' : '-translate-x-full w-56'}
         `}
       >
         <nav className="space-y-0">
@@ -92,7 +92,7 @@ export function Sidebar() {
               key={id}
               onClick={() => scrollToSection(id)}
               className={`
-                group flex items-center w-full py-1 text-left
+                group flex items-center w-full py-1.5 text-left
                 transition-all duration-150
                 ${activeSection === id 
                   ? 'text-[rgb(var(--foreground))]' 
@@ -102,21 +102,21 @@ export function Sidebar() {
             >
               <span
                 className={`
-                  inline-block h-px mr-2.5 transition-all duration-150
+                  inline-block h-px mr-3 transition-all duration-150
                   ${activeSection === id 
-                    ? 'w-4 bg-[rgb(var(--foreground))]' 
-                    : 'w-2 bg-[rgb(var(--foreground)/0.15)] group-hover:bg-[rgb(var(--foreground)/0.3)]'
+                    ? 'w-5 bg-[rgb(var(--foreground))]' 
+                    : 'w-2.5 bg-[rgb(var(--foreground)/0.15)] group-hover:bg-[rgb(var(--foreground)/0.3)]'
                   }
                 `}
               />
-              <span className="text-[12px] font-medium">{label}</span>
+              <span className="text-[15px] font-medium">{label}</span>
             </button>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-3">
           <ModeToggle />
-          <span className="text-[10px] opacity-20 font-mono">2025</span>
+          <span className="text-[13px] opacity-20 font-mono">2025</span>
         </div>
       </aside>
     </>

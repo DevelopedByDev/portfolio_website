@@ -23,7 +23,7 @@ export default function Home() {
               <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link">github</a>
             </div>
 
-            <p className="muted mono" style={{ fontSize: '0.65rem', marginTop: '1rem' }}>
+            <p className="muted mono" style={{ fontSize: '0.845rem', marginTop: '1.3rem' }}>
               p.s. call me dev (like "they've")
             </p>
           </div>
@@ -151,7 +151,7 @@ export default function Home() {
       {/* Writing Section */}
       <section id="writing">
         <h2>writing</h2>
-        <p className="intro-text" style={{ marginBottom: '0.75rem' }}>
+        <p className="intro-text" style={{ marginBottom: '0.975rem' }}>
           thoughts on building, learning, and the journey to becoming a better developer. 
           for shorter writing, check out my <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="link-underline">x</a>
         </p>
@@ -182,6 +182,17 @@ export default function Home() {
       <section id="misc">
         <h2>misc</h2>
         
+        <h3>college</h3>
+        <div>
+          <div className="entry">
+            <div className="entry-header">
+              <a href="https://neo.com/scholars" target="_blank" rel="noopener noreferrer" className="entry-title link-underline">
+                neo scholar finalist
+              </a>
+            </div>
+          </div>
+        </div>
+
         <h3>high school</h3>
         <div>
           <div className="entry">
