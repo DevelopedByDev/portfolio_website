@@ -48,11 +48,11 @@ export function Sidebar() {
       {/* Mobile menu button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-6 right-6 z-50 lg:hidden p-2 rounded-full bg-foreground/5 backdrop-blur-sm border border-foreground/10 hover:bg-foreground/10 transition-colors"
+        className="fixed top-5 right-5 z-50 lg:hidden p-2 rounded-md hover:bg-[rgb(var(--foreground)/0.05)] transition-colors"
         aria-label="Toggle menu"
       >
         <svg
-          className="w-5 h-5"
+          className="w-5 h-5 opacity-60"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ export function Sidebar() {
       {/* Mobile overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-background/80 backdrop-blur-sm z-40 lg:hidden"
+          className="fixed inset-0 bg-[rgb(var(--background)/0.9)] backdrop-blur-sm z-40 lg:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -78,54 +78,49 @@ export function Sidebar() {
         className={`
           fixed top-0 left-0 h-screen z-40
           flex flex-col justify-between
-          py-12 px-8
+          py-10 px-6
           sidebar-bg
-          border-r border-foreground/5
+          border-r border-[rgb(var(--foreground)/0.06)]
           transition-transform duration-300 ease-out
-          lg:translate-x-0 lg:w-56
-          ${isOpen ? 'translate-x-0 w-64' : '-translate-x-full w-64'}
+          lg:translate-x-0 lg:w-48
+          ${isOpen ? 'translate-x-0 w-56' : '-translate-x-full w-56'}
         `}
       >
         <div>
-          <div className="mb-12">
-            <span className="text-xs font-mono tracking-widest uppercase opacity-40">portfolio</span>
-          </div>
-          
-          <nav className="space-y-1">
+          <nav className="space-y-0.5">
             {sections.map(({ id, label }) => (
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
                 className={`
-                  group flex items-center w-full py-2 text-left
-                  transition-all duration-200
+                  group flex items-center w-full py-1.5 text-left
+                  transition-all duration-150
                   ${activeSection === id 
-                    ? 'text-foreground' 
-                    : 'text-foreground/40 hover:text-foreground/70'
+                    ? 'text-[rgb(var(--foreground))]' 
+                    : 'text-[rgb(var(--foreground)/0.4)] hover:text-[rgb(var(--foreground)/0.7)]'
                   }
                 `}
               >
                 <span
                   className={`
-                    inline-block w-6 h-px mr-4 transition-all duration-200
+                    inline-block h-px mr-3 transition-all duration-150
                     ${activeSection === id 
-                      ? 'bg-foreground w-8' 
-                      : 'bg-foreground/20 group-hover:w-6 group-hover:bg-foreground/40'
+                      ? 'w-5 bg-[rgb(var(--foreground))]' 
+                      : 'w-3 bg-[rgb(var(--foreground)/0.2)] group-hover:bg-[rgb(var(--foreground)/0.35)]'
                     }
                   `}
                 />
-                <span className="text-sm font-medium tracking-wide">{label}</span>
+                <span className="text-[13px] font-medium">{label}</span>
               </button>
             ))}
           </nav>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <ModeToggle />
-          <span className="text-xs opacity-30 font-mono">2025</span>
+          <span className="text-[11px] opacity-25 font-mono">2025</span>
         </div>
       </aside>
     </>
   )
 }
-

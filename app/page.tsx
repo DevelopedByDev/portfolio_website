@@ -22,7 +22,7 @@ export default function Home() {
             <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link">github</a>
           </div>
 
-          <p className="muted mono" style={{ fontSize: '0.75rem', marginTop: '3rem' }}>
+          <p className="muted mono" style={{ fontSize: '0.7rem', marginTop: '1.5rem' }}>
             p.s. call me dev (like "they've")
           </p>
         </div>
@@ -142,7 +142,7 @@ export default function Home() {
       {/* Writing Section */}
       <section id="writing">
         <h2>writing</h2>
-        <p className="intro-text" style={{ marginBottom: '2rem' }}>
+        <p className="intro-text" style={{ marginBottom: '1rem' }}>
           thoughts on building, learning, and the journey to becoming a better developer. 
           for shorter writing, check out my <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="link-underline">x</a>
         </p>
