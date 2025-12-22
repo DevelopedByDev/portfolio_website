@@ -13,14 +13,14 @@ export default function Home() {
             <p className="intro-text">
               biomedical engineering + applied math @ <strong>johns hopkins</strong>. 
               enchanted by ai, especially in productivity and healthcare. 
-              building software to help genz reclaim their focus.
+              building software to improve how humans interact with ai on computers.
             </p>
             
             <div className="social-links">
-              <a href="mailto:dlalwan1@jhu.edu" className="social-link">email</a>
-              <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="social-link">x</a>
-              <a href="http://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer" className="social-link">linkedin</a>
-              <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link">github</a>
+              <a href="mailto:dlalwan1@jhu.edu" className="social-link" style={{ textDecoration: 'underline' }}>email</a>
+              <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>x</a>
+              <a href="http://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>linkedin</a>
+              <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>github</a>
             </div>
 
             <p className="muted mono" style={{ fontSize: '0.845rem', marginTop: '1.3rem' }}>
