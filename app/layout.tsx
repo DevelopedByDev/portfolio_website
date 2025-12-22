@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { ThemeProvider } from "@/components/theme-provider"
-import { Navbar } from "@/components/navbar"
+import { Sidebar } from "@/components/sidebar"
 
 export const metadata: Metadata = {
   title: 'Divyansh Lalwani',
@@ -18,12 +18,12 @@ export default function RootLayout({
       <body>
         <ThemeProvider
           attribute="data-theme"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <main className="min-h-screen p-8 md:p-24 max-w-4xl mx-auto">
+          <Sidebar />
+          <main className="lg:ml-56 min-h-screen px-6 md:px-12 lg:px-20 py-12 max-w-3xl">
             {children}
           </main>
         </ThemeProvider>
