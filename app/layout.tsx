@@ -23,7 +23,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Sidebar />
-          <main className="lg:ml-48 min-h-screen px-6 md:px-10 lg:px-16 py-8 max-w-2xl">
+          <main className="lg:ml-44 min-h-screen px-5 md:px-8 lg:px-12 py-6 max-w-xl">
             {children}
           </main>
         </ThemeProvider>

@@ -6,25 +6,34 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-    <section id="home">
-        <div className="max-w-xl">
-          <h1>divyansh lalwani</h1>
-          <p className="intro-text">
-            biomedical engineering + applied math @ <strong>johns hopkins</strong>. 
-            enchanted by ai, especially in productivity and healthcare. 
-            building software to help genz reclaim their focus.
-          </p>
-          
-          <div className="social-links">
-            <a href="mailto:dlalwan1@jhu.edu" className="social-link">email</a>
-            <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="social-link">x</a>
-            <a href="http://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer" className="social-link">linkedin</a>
-            <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link">github</a>
-          </div>
+      <section id="home">
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>divyansh lalwani</h1>
+            <p className="intro-text">
+              biomedical engineering + applied math @ <strong>johns hopkins</strong>. 
+              enchanted by ai, especially in productivity and healthcare. 
+              building software to help genz reclaim their focus.
+            </p>
+            
+            <div className="social-links">
+              <a href="mailto:dlalwan1@jhu.edu" className="social-link">email</a>
+              <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="social-link">x</a>
+              <a href="http://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer" className="social-link">linkedin</a>
+              <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link">github</a>
+            </div>
 
-          <p className="muted mono" style={{ fontSize: '0.7rem', marginTop: '1.5rem' }}>
-            p.s. call me dev (like "they've")
-          </p>
+            <p className="muted mono" style={{ fontSize: '0.65rem', marginTop: '1rem' }}>
+              p.s. call me dev (like "they've")
+            </p>
+          </div>
+          
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/dev-profile.jpg"
+            alt="Divyansh Lalwani"
+            className="profile-image"
+          />
         </div>
       </section>
 
@@ -142,7 +151,7 @@ export default function Home() {
       {/* Writing Section */}
       <section id="writing">
         <h2>writing</h2>
-        <p className="intro-text" style={{ marginBottom: '1rem' }}>
+        <p className="intro-text" style={{ marginBottom: '0.75rem' }}>
           thoughts on building, learning, and the journey to becoming a better developer. 
           for shorter writing, check out my <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="link-underline">x</a>
         </p>
@@ -180,8 +189,8 @@ export default function Home() {
               <span className="entry-title">student body president · valedictorian · act 36/36</span>
             </div>
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
     </>
   )
 }
