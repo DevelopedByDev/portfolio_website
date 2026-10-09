@@ -5,29 +5,31 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section id="home">
-        <div className="hero-content">
+      <section>
+        <div className="hero">
           <div className="hero-text">
-            <h1>divyansh lalwani</h1>
-            <p className="intro-text">
-              biomedical engineering + applied math @ <strong>johns hopkins</strong>. 
-              enchanted by ai, especially in productivity and healthcare. 
-              building software to improve how humans interact with ai on computers.
+            <h1>Divyansh Lalwani</h1>
+            <p>
+              I am the founder and CEO of <a href="https://layernorm.co" target="_blank" rel="noopener noreferrer">LayerNorm</a>,
+              where we are building <a href="https://getoverlay.io" target="_blank" rel="noopener noreferrer">Overlay</a>:
+              a control plane for AI employees that enterprises can create, manage, and deploy
+              wherever work happens. Overlay is open source and self-hostable.
             </p>
-            
-            <div className="social-links">
-              <a href="mailto:divyansh@layernorm.co" className="social-link" style={{ textDecoration: 'underline' }}>email</a>
-              <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>x</a>
-              <a href="http://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>linkedin</a>
-              <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>github</a>
-            </div>
-
-            <p className="muted mono" style={{ fontSize: '0.845rem', marginTop: '1.3rem' }}>
-              p.s. call me dev (like "they've")
+            <p>
+              Previously, I studied biomedical engineering and applied math at <a href="https://www.jhu.edu" target="_blank" rel="noopener noreferrer">Johns Hopkins</a>,
+              automated FDA submission checks at <a href="https://www.bms.com" target="_blank" rel="noopener noreferrer">Bristol Myers Squibb</a>,
+              and did research on brain-computer interfaces at the <a href="https://thakorlab.github.io" target="_blank" rel="noopener noreferrer">Thakor Lab</a> and
+              stroke diagnostics with <a href="https://bme.jhu.edu" target="_blank" rel="noopener noreferrer">AptaTech</a>.
+            </p>
+            <p>
+              I was also a <a href="https://neo.com/scholars" target="_blank" rel="noopener noreferrer">Neo Scholar Finalist</a> and
+              a builder at <a href="https://foundersinc.com" target="_blank" rel="noopener noreferrer">Founders, Inc.</a>
+            </p>
+            <p className="muted" style={{ fontSize: '0.9rem' }}>
+              p.s. call me dev (like &quot;they&apos;ve&quot;)
             </p>
           </div>
-          
+
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/dev-profile.jpg"
@@ -37,170 +39,109 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experiences Section */}
-      <section id="experiences">
-        <h2>experiences</h2>
-        
-        <h3>technical</h3>
-        <div>
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">software engineering @ bristol myers squibb</span>
-              <span className="entry-date">2024</span>
+      <section>
+        <h2>Projects</h2>
+        <div className="work-grid">
+          <div className="work-item">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/overlay.png" alt="Overlay" className="work-thumb" />
+            <div className="work-body">
+              <h3>Overlay</h3>
+              <div className="work-venue">LayerNorm, 2026</div>
+              <p className="work-desc">A control plane for AI employees. Open source, self-hostable, sovereign.</p>
+              <p className="work-links">
+                website <a href="https://getoverlay.io" target="_blank" rel="noopener noreferrer">getoverlay.io</a>
+              </p>
             </div>
-            <p className="entry-description">
-              automated FDA submission processes using Python OCR pipelines, ensuring 100% accuracy in document validation
-            </p>
           </div>
 
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">motor rehabilitation quantifier @ jhu medicine</span>
-              <span className="entry-date">2023</span>
+          <div className="work-item">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/autoquill.png" alt="AutoQuill" className="work-thumb" />
+            <div className="work-body">
+              <h3>AutoQuill</h3>
+              <div className="work-venue">2025</div>
+              <p className="work-desc">AI-powered voice assistant in your menubar. Voice to action with one hotkey.</p>
+              <p className="work-links">
+                website <a href="https://getautoquill.com" target="_blank" rel="noopener noreferrer">getautoquill.com</a>
+              </p>
             </div>
-            <p className="entry-description">
-              developed computer vision system tracking joint motion post-surgery. achieved 96.7% accuracy in rehabilitation analysis
-            </p>
-          </div>
-
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">neuroengineering research @ jhu medicine</span>
-              <span className="entry-date">2023</span>
-            </div>
-            <p className="entry-description">
-              designed in-ear EEG systems for brain-computer interfaces. developed electrodes optimizing conductance and impedance
-            </p>
-          </div>
-
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">aptatech @ jhu biomedical engineering</span>
-              <span className="entry-date">2022 – 2023</span>
-            </div>
-            <p className="entry-description">
-              led prototype development for an aptamer-based electrochemical assay to diagnose ischemic stroke
-            </p>
-          </div>
-
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">ml for diabetic retinopathy @ neuroequilibrium</span>
-              <span className="entry-date">2021 – 2022</span>
-            </div>
-            <p className="entry-description">
-              trained deep CNNs to classify retinal OCT scans with 95.2% accuracy. deployed for rural telemedicine
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects">
-        <h2>projects</h2>
-        
-        <h3>technical</h3>
-        <div>
-          <div className="entry">
-            <div className="entry-header">
-              <a href="https://getautoquill.com" target="_blank" rel="noopener noreferrer" className="entry-title link-underline">
-                AutoQuill
-              </a>
-              <span className="entry-date">2025</span>
-            </div>
-            <p className="entry-description">
-              ai-powered voice assistant that lives in your menubar. capture thoughts, transcribe meetings, and transform voice into action — all with a single hotkey
-            </p>
-          </div>
+      <section>
+        <h2>Experience</h2>
+        <div className="entry">
+          <span className="entry-title">Founder &amp; CEO, LayerNorm</span>
+          <span className="entry-date">2026 - present</span>
         </div>
-
-        <h3>social</h3>
-        <div>
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">resident advisor @ johns hopkins</span>
-              <span className="entry-date">2023 – present</span>
-            </div>
-            <p className="entry-description">
-              supporting first-year students through leadership, community-building, and crisis management
-            </p>
-          </div>
-          
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">students for unified relief</span>
-              <span className="entry-date">2021</span>
-            </div>
-            <p className="entry-description">
-              cofounded initiative that raised $53,000 to provide oxygen concentrators to hospitals during covid-19
-            </p>
-          </div>
-
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">education initiatives</span>
-              <span className="entry-date">2020 – 2021</span>
-            </div>
-            <p className="entry-description">
-              taught programming and creative writing to 150+ students with accessible curricula for young learners
-            </p>
-          </div>
+        <div className="entry">
+          <span className="entry-title">Builder, Founders, Inc. (Canopy)</span>
+          <span className="entry-date">2026</span>
+        </div>
+        <div className="entry">
+          <span className="entry-title">Scholar Finalist, Neo</span>
+          <span className="entry-date">2025 - 2026</span>
+        </div>
+        <div className="entry">
+          <span className="entry-title">Statistical Programming Intern, Bristol Myers Squibb</span>
+          <span className="entry-date">2024</span>
+        </div>
+        <div className="entry">
+          <span className="entry-title">Undergraduate Researcher, JHU School of Medicine</span>
+          <span className="entry-date">2023</span>
+        </div>
+        <div className="entry">
+          <span className="entry-title">Design Team Member, JHU Biomedical Engineering</span>
+          <span className="entry-date">2023</span>
+        </div>
+        <div className="entry">
+          <span className="entry-title">Machine Learning Intern, NeuroEquilibrium</span>
+          <span className="entry-date">2021 - 2022</span>
+        </div>
+        <div className="entry">
+          <span className="entry-title entry-sub">Publication: A Point-of-Care System for Prehospital Stroke Screening</span>
+          <span className="entry-date"></span>
         </div>
       </section>
 
-      {/* Writing Section */}
-      <section id="writing">
-        <h2>writing</h2>
-        <p className="intro-text" style={{ marginBottom: '0.975rem' }}>
-          thoughts on building, learning, and the journey to becoming a better developer. 
-          for shorter writing, check out my <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="link-underline">x</a>
-        </p>
-
-        <h3>essays</h3>
-        <div>
-          {posts.map((post) => (
-            <a 
-              key={post.slug} 
-              href={`/writing/${encodeURIComponent(post.slug)}`}
-              className="blog-entry block"
-            >
-              <div className="blog-title">{post.title}</div>
-              <div className="blog-date">
-                {new Date(post.date).toLocaleDateString('en-US', { 
-                  month: 'short', 
-                  day: 'numeric',
+      <section>
+        <h2>Writing</h2>
+        {posts.map((post) => (
+          <a
+            key={post.slug}
+            href={`/writing/${encodeURIComponent(post.slug)}`}
+            className="writing-entry"
+          >
+            <div className="entry">
+              <span className="entry-title blog-title">{post.title}</span>
+              <span className="entry-date">
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  month: 'short',
                   year: 'numeric'
                 })}
-              </div>
-              {post.excerpt && <p className="blog-excerpt">{post.excerpt}</p>}
-            </a>
-          ))}
-        </div>
+              </span>
+            </div>
+          </a>
+        ))}
       </section>
 
-      {/* Misc Section */}
-      <section id="misc">
-        <h2>misc</h2>
-        
-        <h3>college</h3>
-        <div>
-          <div className="entry">
-            <div className="entry-header">
-              <a href="https://neo.com/scholars" target="_blank" rel="noopener noreferrer" className="entry-title link-underline">
-                neo scholar finalist
-              </a>
-            </div>
-          </div>
-        </div>
+      <section>
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:divyansh@layernorm.co">divyansh@layernorm.co</a>
+          {' '}or <a href="https://calendar.app.google/C93M6yNfS8k6gQdP8" target="_blank" rel="noopener noreferrer">book a call</a>
+        </p>
+      </section>
 
-        <h3>high school</h3>
-        <div>
-          <div className="entry">
-            <div className="entry-header">
-              <span className="entry-title">student body president · valedictorian · act 36/36</span>
-            </div>
-          </div>
-        </div>
+      <section>
+        <h2>Elsewhere</h2>
+        <p>
+          <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer">X</a>,{' '}
+          <a href="https://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>,{' '}
+          <a href="https://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
       </section>
     </>
   )

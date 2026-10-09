@@ -15,7 +15,7 @@ export default function Post({ params }: { params: { slug: string } }) {
     return (
       <article className="py-12">
         <Link 
-          href="/#writing" 
+          href="/" 
           className="inline-flex items-center gap-2 text-sm opacity-50 hover:opacity-100 transition-opacity mb-8"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -47,7 +47,7 @@ export default function Post({ params }: { params: { slug: string } }) {
       <div className="py-12">
         <h1>post not found</h1>
         <p className="muted">sorry, the post you're looking for doesn't exist.</p>
-        <Link href="/#writing" className="link-underline mt-4 inline-block">
+        <Link href="/" className="mt-4 inline-block">
           return to home
         </Link>
       </div>

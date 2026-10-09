@@ -1,11 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { ThemeProvider } from "@/components/theme-provider"
-import { Sidebar } from "@/components/sidebar"
 
 export const metadata: Metadata = {
   title: 'Divyansh Lalwani',
-  description: 'Biomedical Engineering and Computer Science student at Johns Hopkins University',
+  description: 'Founder and CEO of LayerNorm, building Overlay.',
 }
 
 export default function RootLayout({
@@ -14,21 +12,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body>
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Sidebar />
-          <div className="lg:pl-52 min-h-screen flex justify-center">
-            <main className="w-full max-w-2xl px-6 md:px-10 lg:px-16 py-8">
-              {children}
-            </main>
-          </div>
-        </ThemeProvider>
+        <main className="w-full max-w-[720px] mx-auto px-6 py-10 md:py-14">
+          {children}
+        </main>
       </body>
     </html>
   )
