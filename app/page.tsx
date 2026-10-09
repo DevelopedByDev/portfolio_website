@@ -65,7 +65,7 @@ export default function Home() {
             <div className="work-body">
               <h3>Students for Unified Relief</h3>
               <div className="work-venue">2021</div>
-              <p className="work-desc">Cofounded initiative that raised $53,000 for oxygen concentrators during covid-19.</p>
+              <p className="work-desc">Cofounded initiative that raised $53,000 for oxygen concentrators during covid.</p>
             </div>
           </div>
         </div>
