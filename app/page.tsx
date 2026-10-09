@@ -17,7 +17,7 @@ export default function Home() {
             </p>
             
             <div className="social-links">
-              <a href="mailto:dlalwan1@jhu.edu" className="social-link" style={{ textDecoration: 'underline' }}>email</a>
+              <a href="mailto:divyansh@layernorm.co" className="social-link" style={{ textDecoration: 'underline' }}>email</a>
               <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>x</a>
               <a href="http://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>linkedin</a>
               <a href="http://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer" className="social-link" style={{ textDecoration: 'underline' }}>github</a>
