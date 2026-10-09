@@ -95,7 +95,6 @@ section:first-of-type {
   height: auto;
   flex-shrink: 0;
   display: block;
-  filter: grayscale(100%);
 }
 
 @media (max-width: 560px) {

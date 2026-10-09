@@ -1,8 +1,4 @@
-import { getAllPosts } from '@/lib/posts'
-
 export default function Home() {
-  const posts = getAllPosts()
-
   return (
     <>
       <section>
@@ -40,21 +36,16 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Projects</h2>
-        <div className="work-grid">
-          <div className="work-item">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/overlay.png" alt="Overlay" className="work-thumb" />
-            <div className="work-body">
-              <h3>Overlay</h3>
-              <div className="work-venue">LayerNorm, 2026</div>
-              <p className="work-desc">A control plane for AI employees. Open source, self-hostable, sovereign.</p>
-              <p className="work-links">
-                website <a href="https://getoverlay.io" target="_blank" rel="noopener noreferrer">getoverlay.io</a>
-              </p>
-            </div>
-          </div>
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:divyansh@layernorm.co">divyansh@layernorm.co</a>
+          {' '}or <a href="https://calendar.app.google/C93M6yNfS8k6gQdP8" target="_blank" rel="noopener noreferrer">book a call</a>
+        </p>
+      </section>
 
+      <section>
+        <h2>Previous Projects</h2>
+        <div className="work-grid">
           <div className="work-item">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/autoquill.png" alt="AutoQuill" className="work-thumb" />
@@ -65,6 +56,16 @@ export default function Home() {
               <p className="work-links">
                 website <a href="https://getautoquill.com" target="_blank" rel="noopener noreferrer">getautoquill.com</a>
               </p>
+            </div>
+          </div>
+
+          <div className="work-item">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/sur.png" alt="Students for Unified Relief" className="work-thumb" />
+            <div className="work-body">
+              <h3>Students for Unified Relief</h3>
+              <div className="work-venue">2021</div>
+              <p className="work-desc">Cofounded initiative that raised $53,000 for oxygen concentrators during covid-19.</p>
             </div>
           </div>
         </div>
@@ -93,47 +94,19 @@ export default function Home() {
           <span className="entry-date">2023</span>
         </div>
         <div className="entry">
-          <span className="entry-title">Design Team Member, JHU Biomedical Engineering</span>
+          <div>
+            <span className="entry-title">Design Team Member, JHU Biomedical Engineering</span>
+            <div className="entry-sub">Publication: A Point-of-Care System for Prehospital Stroke Screening</div>
+          </div>
           <span className="entry-date">2023</span>
         </div>
         <div className="entry">
           <span className="entry-title">Machine Learning Intern, NeuroEquilibrium</span>
           <span className="entry-date">2021 - 2022</span>
         </div>
-        <div className="entry">
-          <span className="entry-title entry-sub">Publication: A Point-of-Care System for Prehospital Stroke Screening</span>
-          <span className="entry-date"></span>
-        </div>
       </section>
 
-      <section>
-        <h2>Writing</h2>
-        {posts.map((post) => (
-          <a
-            key={post.slug}
-            href={`/writing/${encodeURIComponent(post.slug)}`}
-            className="writing-entry"
-          >
-            <div className="entry">
-              <span className="entry-title blog-title">{post.title}</span>
-              <span className="entry-date">
-                {new Date(post.date).toLocaleDateString('en-US', {
-                  month: 'short',
-                  year: 'numeric'
-                })}
-              </span>
-            </div>
-          </a>
-        ))}
-      </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p>
-          <a href="mailto:divyansh@layernorm.co">divyansh@layernorm.co</a>
-          {' '}or <a href="https://calendar.app.google/C93M6yNfS8k6gQdP8" target="_blank" rel="noopener noreferrer">book a call</a>
-        </p>
-      </section>
 
       <section>
         <h2>Elsewhere</h2>
