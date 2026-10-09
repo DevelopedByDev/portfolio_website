@@ -44,31 +44,12 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Previous Projects</h2>
-        <div className="work-grid">
-          <div className="work-item">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/autoquill.png" alt="AutoQuill" className="work-thumb" />
-            <div className="work-body">
-              <h3>AutoQuill</h3>
-              <div className="work-venue">2025</div>
-              <p className="work-desc">AI-powered voice assistant in your menubar. Voice to action with one hotkey.</p>
-              <p className="work-links">
-                website <a href="https://getautoquill.com" target="_blank" rel="noopener noreferrer">getautoquill.com</a>
-              </p>
-            </div>
-          </div>
-
-          <div className="work-item">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/sur.png" alt="Students for Unified Relief" className="work-thumb" />
-            <div className="work-body">
-              <h3>Students for Unified Relief</h3>
-              <div className="work-venue">2021</div>
-              <p className="work-desc">Cofounded initiative that raised $53,000 for oxygen concentrators during covid.</p>
-            </div>
-          </div>
-        </div>
+        <h2>Elsewhere</h2>
+        <p>
+          <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer">X</a>,{' '}
+          <a href="https://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>,{' '}
+          <a href="https://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
       </section>
 
       <section>
@@ -106,15 +87,32 @@ export default function Home() {
         </div>
       </section>
 
-
-
       <section>
-        <h2>Elsewhere</h2>
-        <p>
-          <a href="https://x.com/dsllwn" target="_blank" rel="noopener noreferrer">X</a>,{' '}
-          <a href="https://linkedin.com/in/divyansh-lalwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>,{' '}
-          <a href="https://github.com/DevelopedByDev" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </p>
+        <h2>Previous Projects</h2>
+        <div className="work-grid">
+          <div className="work-item">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/autoquill.png" alt="AutoQuill" className="work-thumb" />
+            <div className="work-body">
+              <h3>AutoQuill</h3>
+              <div className="work-venue">2025</div>
+              <p className="work-desc">AI-powered voice assistant in your menubar. Voice to action with one hotkey.</p>
+              <p className="work-links">
+                website <a href="https://getautoquill.com" target="_blank" rel="noopener noreferrer">getautoquill.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div className="work-item">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/sur.png" alt="Students for Unified Relief" className="work-thumb" />
+            <div className="work-body">
+              <h3>Students for Unified Relief</h3>
+              <div className="work-venue">2021</div>
+              <p className="work-desc">Cofounded initiative that raised $53,000 for oxygen concentrators during covid.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   )
